@@ -1,0 +1,13 @@
+---
+- name: install and configure Tomcat
+  hosts: 192.168.2.30 
+  become: yes
+  become_user: root
+ 
+  vars:
+    ansible_become_pass: "vagrant"
+  
+  roles:
+    - tomcat
+
+...

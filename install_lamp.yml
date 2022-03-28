@@ -1,0 +1,14 @@
+---
+
+- name: install and configure lamp
+  hosts: web
+  become: yes
+  become_user: root
+
+  vars:
+    ansible_become_password: "vagrant"
+
+  roles:
+    - apache2
+    - mysql
+    - php

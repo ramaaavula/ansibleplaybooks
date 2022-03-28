@@ -1,0 +1,29 @@
+---
+# tasks file for mysql
+
+- name: install mysql
+  ansible.builtin.yum:
+    name:
+      - mariadb
+      - mariadb-server
+    state: present
+
+- name: start mariadb
+  ansible.builtin.service:
+    name: mariadb
+    state: started
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+---
+
+- name: DevOps Info
+  tasks: 
+    - version control:
+        git
+        git-hub
+        gitbash
+        git repos
+
+    - jenkins:
+        maven installation      
+        git installation
+        plugins
+        pipe-line
+        master-nodes configuration
+        global configuration
+
+    - ansible playbooks:
+        adhoc commands
+        playbooks
+...
+            

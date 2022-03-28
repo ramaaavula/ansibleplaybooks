@@ -1,0 +1,37 @@
+---
+- name: install and configure Apache
+  hosts: web
+  become: yes
+
+
+  vars:
+    ansible_become_pass: "vagrant" 
+
+  roles:
+    - apache
+
+
+      
+     
+    
+    
+   
+  
+
+
+
+
+
+
+
+
+...
+
+
+
+
+
+
+
+
+

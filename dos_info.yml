@@ -1,0 +1,14 @@
+---
+- first_name: Adam
+  last_name: Bertram
+  hair_color: Brown
+  married: true
+  spouse:
+    name: Miranda
+    occupation: Mom
+    intrests:
+      - Instagram
+      - facebook
+      - "keeping house clean"
+
+... 

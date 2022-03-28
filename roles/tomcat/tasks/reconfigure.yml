@@ -1,0 +1,7 @@
+---
+
+- name: reconfigure port
+  template:
+    src: httpd.conf.j2
+    dest: /usr/share/tomcat/conf/tomcat-users.xml
+ 
