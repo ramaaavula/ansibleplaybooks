@@ -9,16 +9,15 @@
       - tomcat-docs-webapp
     state: present
 
-- name: start and enable tomcat
+- name: start tomcat
   ansible.builtin.service:
     name: tomcat
     state: started
-    enabled: yes
-
+   
 - name: copy tomcat_install.yml
   ansible.builtin.copy:   
     src: tomcat-users.xml
-    dest: /usr/share/tomcat/conf/tomcat-users.xml
+    dest: /opt/tomcat/conf/tomcat-users.xml
     group: tomcat
     mode: 0644
 
@@ -26,8 +25,14 @@
   ansible.builtin.service:
     name: tomcat
     state: restarted
+
+
+
   
-   
+
+  
+    
+
     
   
    

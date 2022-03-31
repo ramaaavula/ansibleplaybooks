@@ -1,8 +1,0 @@
----
-- name: install and configure tomcat
-  hosts: web
-  become: yes
-  become_user: root
-
-  vars:
-    become_ansible_pass: "vagrant"
